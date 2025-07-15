@@ -15,6 +15,13 @@ on:
         options:
         - 'False'
         - 'True'
+      vpn:
+        description: 'Use VPN'
+        type: choice
+        default: 'False'
+        options:
+        - 'False'
+        - 'True'
       time:
         type: choice
         description: 'Choose Runtime Duration (in hrs)'
@@ -41,4 +48,4 @@ jobs:
 
     - name: GwKangFFRipper is Running
       run: |
-        ././${{ github.workflow }}
+        ./${{ github.workflow }}
